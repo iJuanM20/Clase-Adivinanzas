@@ -1,15 +1,15 @@
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-image: url('https://img.freepik.com/vector-gratis/acuarela-dia-nino-fondo-espanol_23-2149341654.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-repeat: no-repeat; /* No repetir la imagen */
+    background-image: url('https://img.freepik.com/vector-gratis/acuarela-dia-nino-fondo-espanol_23-2149341654.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header, 
-#introduccion { /* Agregado para aplicar el mismo estilo a la sección de introducción */
+#introduccion { 
     color: #333;
     text-align: center;
     padding: 20px;
@@ -22,7 +22,7 @@ header h1 {
 }
 
 header p, 
-#introduccion p { /* Agregado para aplicar el mismo estilo a los párrafos de introducción */
+#introduccion p { 
     font-size: 1.2rem;
     margin: 10px 0;
     color: #333;
@@ -67,8 +67,8 @@ button:hover {
 }
 
 .resultado {
-    display: none; /* Cambiado para ocultar resultados inicialmente */
-    color: #d32f2f; /* Color para las respuestas incorrectas */
+    display: none; 
+    color: #d32f2f; 
     font-weight: bold;
     margin-top: 10px;
     font-size: 1.3rem;
@@ -89,16 +89,16 @@ footer {
 }
 
 .diviertete {
-    font-size: 2rem; /* Cambia el tamaño según prefieras */
-    font-weight: bold; /* Puedes hacer el texto más audaz */
-    text-align: center; /* Centra el texto */
-    margin: 20px 0; /* Espacio arriba y abajo del texto */
-    color: #ff5722; /* Cambia el color si lo deseas */
+    font-size: 2rem;
+    font-weight: bold; 
+    text-align: center; 
+    margin: 20px 0; 
+    color: #ff5722; 
 }
 
 footer p {
-    font-size: 2rem; /* Estilo igual que el .diviertete */
-    font-weight: bold; /* Puede hacer el texto más audaz */
-    color: #ff5722; /* Color igual que el de .diviertete */
-    margin: 20px 0; /* Espacio arriba y abajo del texto */
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #ff5722; 
+    margin: 20px 0; 
 }

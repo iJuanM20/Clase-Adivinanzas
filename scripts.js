@@ -1,19 +1,16 @@
-// Función para mostrar las opciones de respuesta
+let puntaje = 0; // Inicializar el puntaje
+
 function verRespuestas(adivinanzaNum) {
     const respuestasDiv = document.getElementById(`respuestas${adivinanzaNum}`);
-    if (respuestasDiv.style.display === "none") {
-        respuestasDiv.style.display = "block";
-    } else {
-        respuestasDiv.style.display = "none";
-    }
+    respuestasDiv.style.display = (respuestasDiv.style.display === "none") ? "block" : "none";
 }
 
-// Función para evaluar la respuesta seleccionada
+
 function evaluarRespuesta(adivinanzaNum, respuesta) {
     let resultadoText = "";
     let esCorrecta = false;
 
-    // Verificar la respuesta correcta según la adivinanza
+
     switch (adivinanzaNum) {
         case 1:
             esCorrecta = (respuesta === 'pelota');
@@ -25,7 +22,7 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
             esCorrecta = (respuesta === 'nube');
             break;
         case 4:
-            esCorrecta = (respuesta === 'pera');
+            esCorrecta = (respuesta === 'sandía');
             break;
         case 5:
             esCorrecta = (respuesta === 'reloj');
@@ -35,14 +32,23 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
             break;
     }
 
-    // Mensaje de resultado
+
     if (esCorrecta) {
         resultadoText = "¡Correcto! 🎉";
+        puntaje++; 
     } else {
         resultadoText = "Incorrecto. 😢 Inténtalo de nuevo.";
     }
 
-    // Mostrar el resultado
+
     const resultadoElemento = document.getElementById(`resultado${adivinanzaNum}`);
     resultadoElemento.textContent = resultadoText;
+    resultadoElemento.style.display = "block"; // 
+
+
+    document.getElementById("puntaje").textContent = `Tu puntaje: ${puntaje}`;
+
+
+    const respuestasDiv = document.getElementById(`respuestas${adivinanzaNum}`);
+    respuestasDiv.style.display = "none";
 }
