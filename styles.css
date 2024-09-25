@@ -1,0 +1,104 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('https://img.freepik.com/vector-gratis/acuarela-dia-nino-fondo-espanol_23-2149341654.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, 
+#introduccion { /* Agregado para aplicar el mismo estilo a la sección de introducción */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffc107;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff5722;
+}
+
+header p, 
+#introduccion p { /* Agregado para aplicar el mismo estilo a los párrafos de introducción */
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+#adivinanzas {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.adivinanza {
+    background-color: #fff;
+    border: 3px solid #ff9800;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.adivinanza:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+.resultado {
+    display: none; /* Cambiado para ocultar resultados inicialmente */
+    color: #d32f2f; /* Color para las respuestas incorrectas */
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+#puntaje {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    border-top: 5px solid #ffc107;
+    font-size: 1.2rem;
+}
+
+.diviertete {
+    font-size: 2rem; /* Cambia el tamaño según prefieras */
+    font-weight: bold; /* Puedes hacer el texto más audaz */
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Espacio arriba y abajo del texto */
+    color: #ff5722; /* Cambia el color si lo deseas */
+}
+
+footer p {
+    font-size: 2rem; /* Estilo igual que el .diviertete */
+    font-weight: bold; /* Puede hacer el texto más audaz */
+    color: #ff5722; /* Color igual que el de .diviertete */
+    margin: 20px 0; /* Espacio arriba y abajo del texto */
+}
