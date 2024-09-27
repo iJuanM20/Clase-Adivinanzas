@@ -20,7 +20,7 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
             esCorrecta = (respuesta === 'nube');
             break;
         case 4:
-            esCorrecta = (respuesta === 'sandía');
+            esCorrecta = (respuesta === 'pera');
             break;
         case 5:
             esCorrecta = (respuesta === 'reloj');
