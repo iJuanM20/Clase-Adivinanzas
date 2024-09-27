@@ -5,11 +5,9 @@ function verRespuestas(adivinanzaNum) {
     respuestasDiv.style.display = (respuestasDiv.style.display === "none") ? "block" : "none";
 }
 
-
 function evaluarRespuesta(adivinanzaNum, respuesta) {
     let resultadoText = "";
     let esCorrecta = false;
-
 
     switch (adivinanzaNum) {
         case 1:
@@ -22,7 +20,7 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
             esCorrecta = (respuesta === 'nube');
             break;
         case 4:
-            esCorrecta = (respuesta === 'pera');
+            esCorrecta = (respuesta === 'sandía');
             break;
         case 5:
             esCorrecta = (respuesta === 'reloj');
@@ -30,8 +28,19 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
         case 6:
             esCorrecta = (respuesta === 'huevo');
             break;
+        case 7:
+            esCorrecta = (respuesta === 'Caperucita Roja');
+            break;
+        case 8:
+            esCorrecta = (respuesta === 'Caperucita Roja');
+            break;
+        case 9:
+            esCorrecta = (respuesta === 'Caperucita Roja');
+            break;
+        case 10:
+            esCorrecta = (respuesta === 'Caperucita Roja');
+            break;
     }
-
 
     if (esCorrecta) {
         resultadoText = "¡Correcto! 🎉";
@@ -40,14 +49,11 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
         resultadoText = "Incorrecto. 😢 Inténtalo de nuevo.";
     }
 
-
     const resultadoElemento = document.getElementById(`resultado${adivinanzaNum}`);
     resultadoElemento.textContent = resultadoText;
-    resultadoElemento.style.display = "block"; // 
-
+    resultadoElemento.style.display = "block"; 
 
     document.getElementById("puntaje").textContent = `Tu puntaje: ${puntaje}`;
-
 
     const respuestasDiv = document.getElementById(`respuestas${adivinanzaNum}`);
     respuestasDiv.style.display = "none";
