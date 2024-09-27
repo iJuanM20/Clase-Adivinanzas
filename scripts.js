@@ -1,4 +1,4 @@
-let puntaje = 0; // Inicializar el puntaje
+let puntaje = 0; 
 
 function verRespuestas(adivinanzaNum) {
     const respuestasDiv = document.getElementById(`respuestas${adivinanzaNum}`);
@@ -27,18 +27,6 @@ function evaluarRespuesta(adivinanzaNum, respuesta) {
             break;
         case 6:
             esCorrecta = (respuesta === 'huevo');
-            break;
-        case 7:
-            esCorrecta = (respuesta === 'Caperucita Roja');
-            break;
-        case 8:
-            esCorrecta = (respuesta === 'Caperucita Roja');
-            break;
-        case 9:
-            esCorrecta = (respuesta === 'Caperucita Roja');
-            break;
-        case 10:
-            esCorrecta = (respuesta === 'Caperucita Roja');
             break;
     }
 

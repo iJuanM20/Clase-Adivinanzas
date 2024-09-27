@@ -9,7 +9,7 @@ body {
 }
 
 header, 
-#introduccion { 
+#footer {
     color: #333;
     text-align: center;
     padding: 20px;
@@ -21,8 +21,7 @@ header h1 {
     color: #ff5722;
 }
 
-header p, 
-#introduccion p { 
+header p { 
     font-size: 1.2rem;
     margin: 10px 0;
     color: #333;
@@ -48,7 +47,7 @@ header p,
 }
 
 .adivinanza:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 button {
@@ -96,9 +95,41 @@ footer {
     color: #ff5722; 
 }
 
-footer p {
-    font-size: 2rem; 
-    font-weight: bold; 
-    color: #ff5722; 
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+
+
+#adivinanzas-caperucita {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 20px;
+}
+
+#adivinanzas-caperucita {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 20px;
+}
+
+#adivinanzas-caperucita .adivinanza {
+    margin-bottom: 20px; 
+}
+
+h2 {
+    text-align: center; 
     margin: 20px 0; 
+    font-size: 2.5rem; 
+    color: #ff5722; 
+}
+.division {
+    border: none; 
+    height: 5px; 
+    background-color: #ffc107; 
+    margin: 40px 0; 
+
 }
